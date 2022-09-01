@@ -15,6 +15,7 @@
         const typeObj = { test: 1, test1: 2, test3: 3, test4: 4 };
         const typeObjDate = new Date();
         const typeFunction = function () { };
+        const bigInt = 1234567890123456789012345678901234567890n;
 
 
         console.log(typeof typeNumber);  // expected output: "number"
@@ -28,6 +29,8 @@
         console.log(typeof null); // expected output: "object"
         console.log(typeof typeFunction); // expected output: "function"
         console.log(typeof typeNan); // expected output: "number"
+        console.log(typeof bigInt); // expected output: "bigint"
+        console.log(typeof Symbol()); // expected output: "symbol"
 
     </script>
 </head>
