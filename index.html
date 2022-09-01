@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const typeNumber = 23;
+        const typeStr = "string";
+        const typeBoolean = true;
+        const typeNan = 'Test' * 2;
+        const typeArray = [1, 2, 3, 4];
+        const typeObj = { test: 1, test1: 2, test3: 3, test4: 4 };
+        const typeObjDate = new Date();
+        const typeFunction = function () { };
+
+
+        console.log(typeof typeNumber);  // expected output: "number"
+        console.log(typeof typeStr); // expected output: "string"
+        console.log(typeof typeBoolean); // expected output: "boolean"; other value = false
+        console.log(typeof undefinedType); // expected output: "undefined"
+        console.log(typeof 'Test' * 2); // expected output: "NaN"
+        console.log(typeof typeArray); // expected output: "object"
+        console.log(typeof typeObj); // expected output: "object"
+        console.log(typeof typeObjDate); // expected output: "object"
+        console.log(typeof null); // expected output: "object"
+        console.log(typeof typeFunction); // expected output: "function"
+        console.log(typeof typeNan); // expected output: "number"
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
