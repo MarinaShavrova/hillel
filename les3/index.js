@@ -52,18 +52,20 @@ function useSwitch() {
   if (!checkInputNum(mainNumber) || mainNumber.length > 1) {
     alert("Error! Please added the number. The number should be from 0 to 9");
   } else {
-    switch (mainNumber) {
+    switch (Number(mainNumber)) {
       case 0:
-        alert(`You've entered the number - 0`);
+        alert("You've entered the number - 0");
         break;
       case 1:
-        alert(`You've entered the number - 1`);
+        alert("You've entered the number - 1");
         break;
       case 2:
-        alert(`You've entered the number - 2`);
+      case 3:
+        alert("You've entered the number - 2 or 3");
         break;
       default:
-        alert(`You've entered the number - ${mainNumber}`);
+        alert("You've entered the number over 3");
+        break;
     }
   }
 }
