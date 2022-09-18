@@ -24,6 +24,7 @@ function replaceValue(obj, key, value) {
     console.log(obj);
 }
 
-multiplication(menu)
+
+multiplication(menu);
 deleteValue(menu);
 replaceValue(menu, "title", "Clear");
